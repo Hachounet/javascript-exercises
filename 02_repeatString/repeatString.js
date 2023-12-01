@@ -1,18 +1,17 @@
 const repeatString = function(string, num) {
 
-  string = "hey";
-  result = "";
-for ( num = 0; num < 10; num++ ) {
-    if ( num === 3 ) {
-        result = string.repeat(num);
-    }
-    else if ( num === 10) {
-        string = string.repeat(num)
-        
-    }
-    
+  let returnString = "";
+
+ if ( num === -1) {
+    returnString = "ERROR"
+    return returnString; }
+else { 
+for ( let i = 0; i < num; i++ ) {
+    returnString = string.repeat(num);}
+    return returnString;
+
 }
-} 
+ }
 
 
 
